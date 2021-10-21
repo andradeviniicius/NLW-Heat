@@ -69,8 +69,9 @@ main {
 .logo p {
   font-size: 0.5rem;
   position: absolute;
+  text-shadow: 10px;
   top: 120;
-  left: 165;
+  left: 157;
   z-index: 2;
 }
 h1 {
