@@ -3,69 +3,98 @@
     <title>Vinicius de Andrade - DoWhile 2021</title>
     <link rel="stylesheet" href="style.css" />
     <!-- Quando a tag nao tem conteudo não se fecha com /tag> como as abaixo-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-
     <main>
-      <div class="content">       
-
+      <div class="content">
         <div class="logo">
           <span>
-            <img class="" src="images/rocketseat-selo.svg" alt="Selo Build the future Rocketseat ">
-          </span>          
-          <img class="euzinho" src="images/euzinho.png" alt="Foto de Vinicius de andrade">
+            <img
+              class=""
+              src="images/rocketseat-selo.svg"
+              alt="Selo Build the future Rocketseat "
+            />
+          </span>
+          <img
+            class="euzinho"
+            src="images/euzinho.png"
+            alt="Foto de Vinicius de andrade"
+          />
         </div>
-
-
         <div class="user-info">
-          <h1>Vinicius de Andrade</h1>
-          <a href="https://github.com/andradeviniicius/NLW-Heat"> 
-            <img src="images/github-icon.svg" alt="">
+          <h1 id="userName">Vinicius de Andrade</h1>
+          <a href="https://github.com/andradeviniicius/NLW-Heat">
+            <img src="images/github-icon.svg" alt="" />
             andradeviniicius
           </a>
-    
         </div>
-
-
         <div class="user-description">
-          <p>Me chamo dade e estou aprendendo desenvolvimento Web no curso CertifiedTechDev da DigitalHouse e pela segunda vez impulsionando meus conhecimento na NLW :)</p>
+          <p>
+            Me chamo dade e estou aprendendo desenvolvimento Web no curso
+            CertifiedTechDev da DigitalHouse e pela segunda vez impulsionando
+            meus conhecimento na NLW :)
+          </p>
         </div>
-
-
         <div class="user-media">
-          <ul>
-            <li>
-              <a href="https://www.youtube.com/channel/UCB4ofbP8hHxc7THfvLENReg" target="blank">
-                <img src="images/youtube-icon.svg" alt="">
+          <ul id="socialLinks">
+            <li class="youtube">
+              <a
+                href="https://www.youtube.com/channel/UCB4ofbP8hHxc7THfvLENReg"
+                target="blank"
+              >
+                <img src="images/youtube-icon.svg" alt="" />
               </a>
             </li>
-            <li>
+            <li class="instagram">
               <a href="instagram.com.br/andradeviniicius" target="blank">
-                <img src="images/instagram-icon.svg" alt="">
+                <img src="images/instagram-icon.svg" alt="" />
               </a>
             </li>
-            <li>
-              <a href="https://www.facebook.com/AndraudeJapodesair/" target="blank">
-                <img src="images/facebook-icon.svg" alt="">
-              </a> 
+            <li class="facebook">
+              <a
+                href="https://www.facebook.com/AndraudeJapodesair/"
+                target="blank"
+              >
+                <img src="images/facebook-icon.svg" alt="" />
+              </a>
               <!--Esse link eu personalizei com 12 anos gostaram? KKKK-->
             </li>
-            <li>
+            <li class="twitter">
               <a href="twitter.com.br/aaaaandrade" target="blank">
-                <img src="images/twitter-icon.svg" alt="">
+                <img src="images/twitter-icon.svg" alt="" />
               </a>
-            </li> 
+            </li>
           </ul>
         </div>
-
       </div>
-    
+    </main>
 
-    
-  
-  </main>
+    <script>
+      const links = {
+        github: 'maykbrito',
+        twitter: 'maykbrito',
+        youtube: 'maykbrito',
+        facebook: 'maykbrito',
+        instagram: 'maykbrito'
+      }
+
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          const oldSocial = li.getAttribute
+
+          const social = li.getAttribute('class')
+
+          li.children[0].href = `https://${social}.com/${links[social]}`
+        }
+      }
+
+      changeSocialMediaLinks()
+    </script>
   </body>
 </html>
