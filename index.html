@@ -12,6 +12,7 @@
   </head>
   <body>
     <main>
+      
       <div class="content">
         <div class="logo">
           <span>
@@ -21,52 +22,45 @@
               alt="Selo Build the future Rocketseat "
             />
           </span>
-          <img
-            class="euzinho"
-            src="images/euzinho.png"
-            alt="Foto de Vinicius de andrade"
+          <img id="profileImage"
+            src="https://lorempixel.com/185/185/people/"
+            alt="Foto pessoal"
+            id="UserImage"
           />
         </div>
-        <div class="user-info">
-          <h1 id="userName">Vinicius de Andrade</h1>
-          <a href="https://github.com/andradeviniicius/NLW-Heat">
+        <div class="userInfo">
+          <h1 id="userName">Mayk Brito</h1>
+          <a href="https://github.com/maykbrito" target="blank" id="githubLink">
             <img src="images/github-icon.svg" alt="" />
-            andradeviniicius
+              <p id='githubUser'>maykbrito</p>
           </a>
         </div>
-        <div class="user-description">
-          <p>
+        <div class="userDescription">
+          <p id="userBio">
             Me chamo dade e estou aprendendo desenvolvimento Web no curso
             CertifiedTechDev da DigitalHouse e pela segunda vez impulsionando
             meus conhecimento na NLW :)
           </p>
         </div>
-        <div class="user-media">
+        <div class="userMedia">
           <ul id="socialLinks">
             <li class="youtube">
-              <a
-                href="https://www.youtube.com/channel/UCB4ofbP8hHxc7THfvLENReg"
-                target="blank"
-              >
-                <img src="images/youtube-icon.svg" alt="" />
+              <a href="https://youtube.com/maykbrito" target="_blank" id="youtubeLink">
+                <img src="images/youtube-icon.svg" alt="ícone youtube" />
               </a>
             </li>
             <li class="instagram">
-              <a href="instagram.com.br/andradeviniicius" target="blank">
+              <a href="https://instagram.com/maykbrito" target="_blank">
                 <img src="images/instagram-icon.svg" alt="" />
               </a>
             </li>
             <li class="facebook">
-              <a
-                href="https://www.facebook.com/AndraudeJapodesair/"
-                target="blank"
-              >
+              <a href="https://facebook.com/maykbrito" target="_blank">
                 <img src="images/facebook-icon.svg" alt="" />
-              </a>
-              <!--Esse link eu personalizei com 12 anos gostaram? KKKK-->
+              </a>              
             </li>
             <li class="twitter">
-              <a href="twitter.com.br/aaaaandrade" target="blank">
+              <a href="https://instagram.com/maykbrito" target="_blank">
                 <img src="images/twitter-icon.svg" alt="" />
               </a>
             </li>
@@ -75,26 +69,6 @@
       </div>
     </main>
 
-    <script>
-      const links = {
-        github: 'maykbrito',
-        twitter: 'maykbrito',
-        youtube: 'maykbrito',
-        facebook: 'maykbrito',
-        instagram: 'maykbrito'
-      }
-
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const oldSocial = li.getAttribute
-
-          const social = li.getAttribute('class')
-
-          li.children[0].href = `https://${social}.com/${links[social]}`
-        }
-      }
-
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

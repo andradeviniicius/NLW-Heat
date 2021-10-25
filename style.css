@@ -95,13 +95,13 @@ a {
   align-items: center;
 }
 
-.user-description {
+.userDescription {
   font-size: 0.875rem;
   margin-top: 2rem;
   /* font: 'Roboto' ; */
 }
 
-.user-media {
+.userMedia {
   margin-top: 4rem;
 justify-content: center;
 }
